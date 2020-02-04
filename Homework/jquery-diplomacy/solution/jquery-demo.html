@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: sans-serif;
+      padding: 1rem;
+      padding-bottom: 200px;
+    }
+
+    body > section {
+      margin: 4em 0;
+    }
+
+    form {
+      width: 30%;
+    }
+
+    p {
+      width: 100%;
+    }
+
+    .bold {
+      font-weight: bold;
+    }
+
+    .red {
+      color: red !important;
+    }
+
+    .input-feedback {
+      min-height: 1rem;
+    }
+
+    .hide {
+      visibility: hidden;
+    }
+
+    .border-black {
+      border: 1px solid black;
+      padding: 0.25rem;
+    }
+  </style>
+
+  <!-- Import jQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.4.0.js"
+		integrity="sha256-DYZMCC8HTC+QDr5QNaIcfR7VSPtcISykd+6eSmBW5qo="
+		crossorigin="anonymous">
+  </script>
+</head>
+<body>
+  <h1 class="color-change">Ubermelon JQuery Demo</h1>
+  <h3 class="color-change">Yup, we totally know jQuery</h3>
+
+  <section>
+    <h2 class="color-change">Text Change</h2>
+
+    <p>
+      When you click the button below, all elements with the
+      <code>.color-change</code> class turn red!
+    </p>
+
+    <button type="button" class="color-changer">Click Me!</button>
+  </section>
+
+  <section>
+    <h2 class="color-change">Number Validation</h2>
+
+    <p>
+      This form gives users feedback if their inputs aren't valid. At
+      Ubermelon, we really care about usability!
+    </p>
+    <p>
+      Users will get feedback when they submit the form.
+    </p>
+
+    
+
+    <form class="number-form">
+      <section class="form-desc">
+        <p>
+          Choose a number that's smaller than 10!
+        </p>
+      </section>
+
+      <section class="form-inputs">
+        <label class="color-change" for="number-input">
+          Please enter a smaller than 10:
+        </label>
+        <input name="number" id="number-input" type="text">
+      </section>
+
+      <section class="form-feedback">
+        <p class="input-feedback border-black">
+          <span id="formFeedback" class="bold">
+            Submit the form to get feedback
+          </span>
+        </p>
+      </section>
+
+      <footer class="form-footer">
+        <input type="submit">
+      </footer>
+    </form>
+  </section>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
