@@ -11,8 +11,6 @@ def open_and_read_file(file_path):
     the file's contents as one string of text.
     """
 
-    # your code goes here
-
     file = open(file_path).read()
 
 
@@ -50,8 +48,6 @@ def make_chains(text_string):
 
     chains = {}
 
-    # your code goes here
-
     for i in range(len(words) - 1):
         chains[(words[i], words[i + 1])] = chains.get((words[i], words[i + 1]), [])
         try:
@@ -67,7 +63,7 @@ def make_text(chains_dict):
     # link = list(chains_dict.keys())[0]
     # generated_sentence = [link[0], link[1]]
     upper_links = []
-    # your code goes here
+
     for chain in chains.keys():
         if chain[0][0].isupper():
             upper_links.append(chain)
